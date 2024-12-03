@@ -1,13 +1,22 @@
 {
-    "current_version": "1.21.44",
+    "current_version": "1.21.50.07",
     "dedicated_server": [
         {
-            "version": "1.21.44",
+            "version": "1.21.44.01",
             "windows": {
                 "download_url": "https://www.minecraft.net/bedrockdedicatedserver/bin-win/bedrock-server-1.21.44.01.zip"
             },
             "linux":  {
                 "download_url": "https://www.minecraft.net/bedrockdedicatedserver/bin-linux/bedrock-server-1.21.44.01.zip"
+            }
+        },
+        {
+            "version": "1.21.50.07",
+            "windows": {
+                "download_url": "https://www.minecraft.net/bedrockdedicatedserver/bin-win/bedrock-server-1.21.50.07.zip"
+            },
+            "linux": {
+                "download_url": "https://www.minecraft.net/bedrockdedicatedserver/bin-linux/bedrock-server-1.21.50.07.zip"
             }
         }
     ]
