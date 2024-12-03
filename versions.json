@@ -3,6 +3,7 @@
     "dedicated_server": [
         {
             "version": "1.21.44.01",
+            "core": "0.1",
             "windows": {
                 "download_url": "https://www.minecraft.net/bedrockdedicatedserver/bin-win/bedrock-server-1.21.44.01.zip"
             },
@@ -12,6 +13,7 @@
         },
         {
             "version": "1.21.50.07",
+            "core": "0.1",
             "windows": {
                 "download_url": "https://www.minecraft.net/bedrockdedicatedserver/bin-win/bedrock-server-1.21.50.07.zip"
             },
