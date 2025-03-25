@@ -60,6 +60,16 @@
             "linux": {
                 "download_url": "https://www.minecraft.net/bedrockdedicatedserver/bin-linux/bedrock-server-1.21.62.01.zip"
             }
+        },
+        {
+            "version": "1.21.70.04",
+            "core": "0.1",
+            "windows": {
+                "download_url": "https://www.minecraft.net/bedrockdedicatedserver/bin-win/bedrock-server-1.21.70.04.zip"
+            },
+            "linux": {
+                "download_url": "https://www.minecraft.net/bedrockdedicatedserver/bin-linux/bedrock-server-1.21.70.04.zip"
+            }
         }
     ]
 }
