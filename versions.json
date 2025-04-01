@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
     "current_version": "1.21.71.01",
+=======
+    "current_version": "1.21.70.04",
+>>>>>>> 4cf38bd6a204f0220dc57c403b3664ac78292961
     "dedicated_server": [
         {
             "version": "1.21.44.01",
