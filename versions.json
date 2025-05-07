@@ -1,5 +1,5 @@
 {
-  "current_version": "1.21.73.01",
+  "current_version": "1.21.80.3",
   "dedicated_server": [
     {
       "version": "1.21.44.01",
@@ -83,6 +83,18 @@
       "linux": {
         "download_url": "https://www.minecraft.net/bedrockdedicatedserver/bin-linux/bedrock-server-1.21.73.01.zip",
         "sha256": "56cb7badc975572d3e8264078478f034bb4e858f33133dee2f1cff0afbdae0ac"
+      }
+    },
+    {
+      "version": "1.21.80.3",
+      "core": "0.1",
+      "windows": {
+        "download_url": "https://www.minecraft.net/bedrockdedicatedserver/bin-win/bedrock-server-1.21.80.3.zip",
+        "sha256": "accdf27c5a8dfe1f7309e069c7928a5f83937f9de0405dd78dd9ff34a4b2bbd8"
+      },
+      "linux": {
+        "download_url": "https://www.minecraft.net/bedrockdedicatedserver/bin-linux/bedrock-server-1.21.80.3.zip",
+        "sha256": "e06f98c7ac05d926244bc3323df7a40376e059a7d199bcb48064aadf128c8533"
       }
     }
   ]
