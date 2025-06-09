@@ -3,11 +3,13 @@
     "shared": {
       "loader": {
         "url": "https://github.com/TorchCS-MC/TorchCS-Loader",
-        "version": "1.0.0"
+        "version": "1.0.0",
+        "sha256": "8a522a602175c23fa453d895e9af3e3ed7ca4dd7677f987e397a6397dfe5f028"
       },
       "core": {
         "ur": "",
-        "version": ""
+        "version": "",
+        "sha256": ""
       }
     },
     "binary": {
