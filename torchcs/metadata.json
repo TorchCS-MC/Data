@@ -2,20 +2,34 @@
   "latest": {
     "shared": {
       "loader": {
-        "url": "https://github.com/TorchCS-MC/Loader",
-        "version": "1.0.0",
-        "sha256": "8a522a602175c23fa453d895e9af3e3ed7ca4dd7677f987e397a6397dfe5f028"
+        "windows": {
+          "url": "https://github.com/TorchCS-MC/Loader",
+          "version": "1.0.0",
+          "sha256": "8a522a602175c23fa453d895e9af3e3ed7ca4dd7677f987e397a6397dfe5f028"
+        },
+        "linux": {
+          "url": "",
+          "version": "",
+          "sha256": ""
+        }
       },
       "core": {
-        "ur": "",
-        "version": "",
-        "sha256": ""
+        "windows": {
+          "url": "",
+          "version": "",
+          "sha256": ""
+        },
+        "linux": {
+          "url": "",
+          "version": "",
+          "sha256": ""
+        }
       }
     },
     "binary": {
       "version": {
         "release": "1.21.84.1",
-        "preview": "1.21.90.28"
+        "preview": "1.21.100.20"
       }
     }
   }
