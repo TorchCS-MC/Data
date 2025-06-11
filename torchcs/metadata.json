@@ -3,7 +3,7 @@
     "shared": {
       "loader": {
         "windows": {
-          "url": "https://github.com/TorchCS-MC/Loader",
+          "url": "https://github.com/TorchCS-MC/Loader/releases/download/{version}/torchcs_loader.dll",
           "version": "1.0.0",
           "sha256": "8a522a602175c23fa453d895e9af3e3ed7ca4dd7677f987e397a6397dfe5f028"
         },
