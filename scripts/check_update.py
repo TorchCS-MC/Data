@@ -114,8 +114,30 @@ def update_torchcs_metadata(latest_versions):
         torchcs_data = {
             "latest": {
                 "shared": {
-                    "loader": "url",
-                    "core": "url"
+                    "loader": {
+                        "windows": {
+                            "url": "",
+                            "version": "",
+                            "sha256": ""
+                        },
+                        "linux": {
+                            "url": "",
+                            "version": "",
+                            "sha256": ""
+                        }
+                    },
+                    "core": {
+                        "windows": {
+                            "url": "",
+                            "version": "",
+                            "sha256": ""
+                        },
+                        "linux": {
+                            "url": "",
+                            "version": "",
+                            "sha256": ""
+                        }
+                    }
                 },
                 "binary": {
                     "version": {
