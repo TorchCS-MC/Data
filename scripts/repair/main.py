@@ -4,6 +4,7 @@ import hashlib
 import requests
 from pathlib import Path
 from configs import BEDROCK_DIR, TORCHCS_VERSIONS_JSON_FILE
+from logger import log
 
 def get_sha256_from_url(url: str) -> str | None:
     try:
@@ -14,11 +15,13 @@ def get_sha256_from_url(url: str) -> str | None:
                 if chunk:
                     sha256_hash.update(chunk)
         return sha256_hash.hexdigest()
-    except Exception:
+    except Exception as e:
+        log.error(f"Failed to compute SHA256 for URL: {url} | Error: {e}")
         return None
 
 def check_sha256(meta_path: Path) -> bool:
     if not meta_path.exists():
+        log.warning(f"metadata.json not found at: {meta_path}")
         return False
 
     try:
@@ -37,17 +40,21 @@ def check_sha256(meta_path: Path) -> bool:
                 new_sha = get_sha256_from_url(url)
                 if new_sha:
                     section["sha256"] = new_sha
+                    log.info(f"Added missing SHA256 for {platform}: {new_sha}")
                     changed = True
 
         if changed:
             with meta_path.open("w", encoding="utf-8") as f:
                 json.dump(metadata, f, indent=2)
+            log.info(f"Updated metadata with missing SHA256: {meta_path}")
         return True
 
-    except Exception:
+    except Exception as e:
+        log.error(f"Failed to repair metadata file: {meta_path} | Error: {e}")
         return False
 
 def check_versions_file():
+    log.info("Checking and cleaning versions.json entries...")
     with open(TORCHCS_VERSIONS_JSON_FILE, "r", encoding="utf-8") as f:
         versions_data = json.load(f)
 
@@ -59,10 +66,13 @@ def check_versions_file():
             meta_path = BEDROCK_DIR / app / version / "metadata.json"
             if check_sha256(meta_path):
                 valid_versions.append(version)
+            else:
+                log.warning(f"Removed invalid or incomplete version: {app} {version}")
         cleaned[app] = valid_versions
 
     with open(TORCHCS_VERSIONS_JSON_FILE, "w", encoding="utf-8") as f:
         json.dump(cleaned, f, indent=2)
+    log.info("Finished cleaning versions.json")
 
 def main():
     check_versions_file()
