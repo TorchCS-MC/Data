@@ -1,18 +1,5 @@
 {
   "latest": {
-    "shared": {
-      "loader": {
-        "windows": {
-          "url": "https://github.com/TorchCS-MC/Loader/releases/download/{version}/torchcs_loader.dll",
-          "version": "1.0.1",
-          "sha256": "907fdb04294085da67a54152c0cad8ff4f758d31cb5927023665937b17b4c770"
-        },
-        "linux": {
-          "url": "https://github.com/TorchCS-MC/Loader/releases/download/{version}/torchcs_loader.so",
-          "version": "1.0.1",
-          "sha256": "61f7c96d90f4ee7d5b81667d7115920f7d25a53e8aaef90976057f81e1741236"
-        }
-      },
       "core": {
         "windows": {
           "url": "",
