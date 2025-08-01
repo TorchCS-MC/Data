@@ -1,23 +1,22 @@
 {
-  "latest": {
-      "core": {
-        "windows": {
-          "url": "",
-          "version": "",
-          "sha256": ""
-        },
-        "linux": {
-          "url": "",
-          "version": "",
-          "sha256": ""
+    "latest": {
+        "core": {
+            "windows": {
+                "url": "",
+                "version": "",
+                "sha256": ""
+            },
+            "linux": {
+                "url": "",
+                "version": "",
+                "sha256": ""
+            }
         }
-      }
     },
     "binary": {
-      "version": {
-        "release": "1.21.95.1",
-        "preview": "1.21.110.22"
-      }
+        "version": {
+            "release": "1.21.95.1",
+            "preview": "1.21.110.22"
+        }
     }
-  }
 }
