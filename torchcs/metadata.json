@@ -4,13 +4,13 @@
       "loader": {
         "windows": {
           "url": "https://github.com/TorchCS-MC/Loader/releases/download/{version}/torchcs_loader.dll",
-          "version": "1.0.0",
-          "sha256": "8a522a602175c23fa453d895e9af3e3ed7ca4dd7677f987e397a6397dfe5f028"
+          "version": "1.0.1",
+          "sha256": "907fdb04294085da67a54152c0cad8ff4f758d31cb5927023665937b17b4c770"
         },
         "linux": {
-          "url": "",
-          "version": "",
-          "sha256": ""
+          "url": "https://github.com/TorchCS-MC/Loader/releases/download/{version}/torchcs_loader.so",
+          "version": "1.0.1",
+          "sha256": "61f7c96d90f4ee7d5b81667d7115920f7d25a53e8aaef90976057f81e1741236"
         }
       },
       "core": {
